@@ -1,2 +1,1 @@
-# landing-page-for-sale-of-mattresses
-At work
+Лендинг страница для магазина "Матрасовъ" для увеличения продаж.
