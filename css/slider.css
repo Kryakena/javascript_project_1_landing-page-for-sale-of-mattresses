@@ -1,0 +1,103 @@
+body {
+    padding: 10px;
+    /*задать поле вокруг наших элементов*/
+    background: #1f1f1f;
+    /*задний фон черный*/
+}
+
+.carousel1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0px; /*убирает пиксели предыдущего изображения в слайдере. Но это работает, когда нет текста!*/
+}
+
+.carousel1 img{
+    width: 1280px;
+    height: 729px;
+    display: block;
+}
+
+.carousel2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0px; /*убирает пиксели предыдущего изображения в слайдере. Но это работает, когда нет текста!*/
+}
+
+.carousel2 img{
+    width: 1280px;
+    height: 729px;
+    display: block;
+}
+
+.carousel3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0px; /*убирает пиксели предыдущего изображения в слайдере. Но это работает, когда нет текста!*/
+}
+
+.carousel3 img{
+    width: 1280px;
+    height: 729px;
+    display: block;
+}
+
+
+.prev{
+    left: -70px;
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #555555;
+    transition: transform 0.5s, color 0.2s;
+    cursor: pointer;
+}
+
+.next{
+    right: -70px;
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #555555;
+    transition: transform 0.5s, color 0.2s;
+    cursor: pointer;
+}
+
+.prev:active{
+    color: aqua;
+}
+
+.next:active{
+    color: aqua;
+}
+
+.gallery {
+    /*менять размеры изображений по своему экрану монитора, т.к. это неадаптивный слайдер*/
+    width: 1100px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0; /*внешний отступ*/
+    padding: 0; /*внутренний отступ*/
+    list-style: none;
+    transition: margin-left 500ms; /*перемещение влево со скоростью 500 миллисекунд*/
+}
+
+.gallery li {
+    display: inline-block;
+}
