@@ -9,7 +9,7 @@
 <meta name="revisit-after" content="7 days">
 <meta property="og:type" content="article">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <link href="style/LP.css" rel="stylesheet">
 <link href="style/matrasy_best_un_8.css" rel="stylesheet">
 <script src="js/popper.min.js"></script>
