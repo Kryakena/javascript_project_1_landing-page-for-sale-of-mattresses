@@ -1,0 +1,290 @@
+@font-face
+{
+   font-family: "Stolzl Light";
+   font-display: swap;
+   src: url('../fonts/verdana.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: Gilroy-Medium;
+   font-display: swap;
+   src: url('../fonts/gilroy-medium.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: Gilroy-Black;
+   font-display: swap;
+   src: url('../fonts/gilroy-black.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: "Stolzl Bold";
+   font-display: swap;
+   src: url('../fonts/verdana.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: "Stolzl Medium";
+   font-display: swap;
+   src: url('../fonts/verdana.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: Stolzl;
+   font-display: swap;
+   src: url('../fonts/verdana.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: "Stolzl Book";
+   font-display: swap;
+   src: url('../fonts/verdana.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: "Muller Regular";
+   font-display: swap;
+   src: url('../fonts/verdana.ttf') format('truetype');
+}
+@font-face
+{
+   font-family: "Material Icons";
+   font-display: swap;
+   src: url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+        url('../fonts/MaterialIcons-Regular.woff') format('woff'),
+        url('../fonts/MaterialIcons-Regular.ttf') format('truetype'),
+        url('../fonts/MaterialIcons-Regular.svg#MaterialIcons-Regular') format('svg'),
+        url('../fonts/MaterialIcons-Regular.eot') format('embedded-opentype');
+}
+@keyframes animate-fade-in
+{
+   0% { opacity: 0;  }
+   100% { opacity: 1;  }
+}
+@keyframes animate-fade-in-down
+{
+   0% { transform: translate(0px,-100px) rotate(0deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
+@keyframes animate-fade-in-left
+{
+   0% { transform: translate(-100px,0px) rotate(0deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
+@keyframes animate-fade-in-right
+{
+   0% { transform: translate(100px,0px) rotate(0deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
+@keyframes animate-fade-in-up
+{
+   0% { transform: translate(0px,100px) rotate(0deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
+@keyframes transform-tada
+{
+   0% { transform: rotate(0deg) ;  }
+   10% { transform: rotate(-3deg) scale(0.9,0.9) ;  }
+   20% { transform: rotate(-3deg) scale(0.9,0.9) ;  }
+   30% { transform: rotate(3deg) scale(1.1,1.1) ;  }
+   40% { transform: rotate(-3deg) scale(1.1,1.1) ;  }
+   50% { transform: rotate(3deg) scale(1.1,1.1) ;  }
+   60% { transform: rotate(-3deg) scale(1.1,1.1) ;  }
+   70% { transform: rotate(3deg) scale(1.1,1.1) ;  }
+   80% { transform: rotate(-3deg) scale(1.1,1.1) ;  }
+   90% { transform: rotate(3deg) scale(1.1,1.1) ;  }
+   100% { transform: rotate(0deg) scale(1.0,1.0) ;  }
+}
+@keyframes transform-3d-flip
+{
+   0% { transform: perspective(400px) rotateX(0deg) ;  }
+   40% { transform: perspective(400px) translate3d(0px,0px,150px) rotateX(0deg) rotateY(170deg) ;  }
+   50% { transform: perspective(400px) translate3d(0px,0px,150px) rotateX(0deg) rotateY(190deg) scale3d(1.01,1.01,1.01) ;  }
+   80% { transform: perspective(400px) translate3d(0px,0px,0px) rotateX(0deg) rotateY(360deg) scale3d(0.95,0.95,0.95) ;  }
+   100% { transform: perspective(400px) translate3d(0px,0px,0px) rotateX(0deg) rotateY(0deg) scale3d(1.0,1.0,1.0) ;  }
+}
+a.link
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.link:visited
+{
+   color: #FFA500;
+   text-decoration: underline;
+}
+a.link:active
+{
+   color: #F5DEB3;
+   text-decoration: underline;
+}
+a.link:hover
+{
+   color: #EFC285;
+   text-decoration: underline;
+}
+a.uslugi
+{
+   color: #EFC285;
+   text-decoration: none;
+}
+a.uslugi:visited
+{
+   color: #EFC285;
+   text-decoration: none;
+}
+a.uslugi:active
+{
+   color: #F5DEB3;
+   text-decoration: none;
+}
+a.uslugi:hover
+{
+   color: #F5DEB3;
+   text-decoration: none;
+}
+a.podval
+{
+   color: #EFC285;
+   text-decoration: underline;
+}
+a.podval:visited
+{
+   color: #EFC285;
+   text-decoration: underline;
+}
+a.podval:active
+{
+   color: #F5DEB3;
+   text-decoration: underline;
+}
+a.podval:hover
+{
+   color: #F5DEB3;
+   text-decoration: underline;
+}
+a.politica
+{
+   color: #8E8E8E;
+   text-decoration: underline;
+}
+a.politica:visited
+{
+   color: #8E8E8E;
+   text-decoration: underline;
+}
+a.politica:active
+{
+   color: #8E8E8E;
+   text-decoration: underline;
+}
+a.politica:hover
+{
+   color: #8E8E8E;
+   text-decoration: underline;
+}
+h1, .h1
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 32px;
+   text-decoration: none;
+   color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline;
+}
+h2, .h2
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 27px;
+   text-decoration: none;
+   color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline;
+}
+h3, .h3
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 24px;
+   text-decoration: none;
+   color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline;
+}
+h4, .h4
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 21px;
+   font-style: italic;
+   text-decoration: none;
+   color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline;
+}
+h5, .h5
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 19px;
+   text-decoration: none;
+   color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline;
+}
+h6, .h6
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+   text-decoration: none;
+   color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline;
+}
+.CustomStyle
+{
+   font-family: "Courier New";
+   font-weight: bold;
+   font-size: 16px;
+   text-decoration: none;
+   color: #2E74B5;
+   --color: #2E74B5;
+   background-color: transparent;
+}
+.zz
+{
+   text-decoration: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+.hov
+{
+   text-decoration: none;
+   background-color: transparent;
+   cursor: pointer;
+   box-shadow: 30px 30px 30px #000000;
+}
+@media only screen and (max-width: 1169px)
+{
+}
