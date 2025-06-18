@@ -12,10 +12,9 @@ for (var i = 0; i < images_total_count; i++ ) {
     image_clone.src = images[i].src;
 }
 
-function image_loaded() { // При загрузке до 100%, окно загрузки исчезнет
+function image_loaded() {
     images_loaded_count++;
     perc_display.innerHTML = (( ( 100 / images_total_count ) * images_loaded_count ) << 0) + '%';
-    // Чтобы при делении не было дробных чисел
 
     if( images_loaded_count >= images_total_count ) {
         setTimeout(function() {

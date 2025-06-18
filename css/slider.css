@@ -5,7 +5,7 @@ body {
     /*задний фон черный*/
 }
 
-.carousel1 {
+.carousel {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,40 +13,11 @@ body {
     font-size: 0px; /*убирает пиксели предыдущего изображения в слайдере. Но это работает, когда нет текста!*/
 }
 
-.carousel1 img{
+.carousel img{
     width: 1280px;
     height: 729px;
     display: block;
 }
-
-.carousel2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0px; /*убирает пиксели предыдущего изображения в слайдере. Но это работает, когда нет текста!*/
-}
-
-.carousel2 img{
-    width: 1280px;
-    height: 729px;
-    display: block;
-}
-
-.carousel3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0px; /*убирает пиксели предыдущего изображения в слайдере. Но это работает, когда нет текста!*/
-}
-
-.carousel3 img{
-    width: 1280px;
-    height: 729px;
-    display: block;
-}
-
 
 .prev{
     left: -70px;
