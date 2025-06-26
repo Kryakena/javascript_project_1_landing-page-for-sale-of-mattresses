@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /*Обнуление*/
 *,*:before,*:after{
     padding: 0;

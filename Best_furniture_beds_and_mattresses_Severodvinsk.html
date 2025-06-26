@@ -14,22 +14,27 @@
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
     <link rel="icon" href="img/icon/favicon.ico" type="image/ico">
+    <link rel="manifest" href="package.json">
+    <link rel="manifest" href="package-lock.json">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     </head>
 <body>
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1>
     <div class="wrapper">
         <header class="header">
-            <div class='container'> <!--container - ограничит ширину нашей контентной части-->
+            <div class='container'> 
                 <div class="header_body">
                     <a href="#" class="header_logo">
                         <img src="img/logo.jpg" alt="Мебель, кровати и матрасы в Северодвинске">
-                    </a> <!--логотип-->
+                    </a> 
                     <div class="header_burger">
-                        <span></span> <!--span - нужен для рисования бургера-->
+                        <span></span> 
                     </div>
-                    <nav class="header_menu"> <!--nav - меню бургера-->
+                    <nav class="header_menu"> 
                         <ul class="header_list">
                             <li>
                                 <a href="https://yandex.ru/maps/-/CHgANWnp" class="header_link">г. Северодвинск, ул. Железнодорожная 37</a>
@@ -40,8 +45,21 @@
                                         <img src="img/icon/pnone.svg" alt="phone-icon" width="20" height="32">
                                     </div>
                                     <div class="header_link">
-                                        <a class="btn top-phone-btn" href="tel:89210533404" role="button" id="us-phones-dropdown"><span>8 (921) 053 34 04</span></a>
-                                        <span class="us-phone-link" onclick="octPopupCallPhone()">Ежедневно: 10:00-20:00</span>
+                                        <div class="col-md-6 col-lg-4 us-advantages-item">
+                                            <div class="us-advantages-box d-flex align-items-center justify-content-start h-100" id="block-0-1">
+                                                <div class="us-advantages-img">
+                                                    <i class="far fa-thumbs-up"></i>
+                                                </div>
+                                                <div class="us-advantages-cont">
+                                                    <div class="us-advantages-title">
+                                                        <a href="tel:89210533404">8 (921) 053 34 04</a>
+                                                    </div>
+                                                    <p class="us-advantages-text">
+                                                        Ежедневно: 10:00-20:00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -57,6 +75,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="vite.config.ts"></script>
 </body>
 </html>
