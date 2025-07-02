@@ -1,6 +1,3 @@
-/*Базовые настройки для сайта.*/
-
-/*Шрифт.*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *,*:before,*:after{
@@ -12,165 +9,71 @@
 html,body{
     height: 100%;
     font-family: 'Poppins', Arial, sans-serif;
-    color: #000000; /*цвет шрифта*/
+    color: #000000; 
 }
 
 a {
-    text-decoration: none; /*убрать нижнее подчеркивание у всех ссылок*/
+    text-decoration: none; 
 }
 
 .wrapper {
     width: 100%;
 }
 
-.container {
-    width: 1440px;
-    margin: 0 auto;
+.container{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 10px;
 }
 
-header {
-    padding: 93px 7px;
-    width: 1400px;
+.header { 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50; 
+}
+
+.header:after{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; 
+}
+
+.header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a4e99d;
+    z-index: 2; 
+}
+
+.header_body {
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
     height: 180px;
-    background: #fff;
+    align-items: center;
 }
 
-header .logo {
+.header_logo {
+    flex: 0 0 60px;
     width: 475px;
     height: 180px;
     padding-left: 0;
     padding-top: 0;
-}
-
-header .logo ul {
-    list-style: none;
-    display: flex;
-}
-
-header .logo ul.logo_img {
-    width: 350px;
-    height: 60px;
-    padding-left: 78px;
-    padding-top: 35px;
-}
-
-header .logo ul.logo_info {
-    width: 406px;
-    height: 56px;
-    padding-left: 50px;
-    padding-top: 8px;
-}
-
-header .logo ul.logo_info li {
-    margin: 1px;
-}
-
-header .logo ul.logo_info li .logo_info_icon {
-    width: 40px;
-    height: 40px;
-}
-
-header .logo ul.logo_info li .logo_info_text {
-    width: 90px;
-    height: 30px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-header nav {
-    float: right;
-    width: 848px;
-    height: 74px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
+    overflow: visible;
     position: relative;
+    z-index: 3;
 }
 
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
-    color: #0a0a0a;
-}
-
-header nav ul li.active::after { /*обводочка при наведении*/
-    content: '';
-    display: block;
-    width: 40px;
-    height: 5px;
-    background: #DC7000;
-    border-radius: 10px;
-    position: relative;
-    top: 30px;
-    left: -15px;
-}
-
-header nav ul li:not(.active):not(.btn) a:hover {
-    border-bottom: 5px solid #DC7000;
-}
-
-header nav ul li.btn a {
-    background: #FA9021;
-    padding: 9px 17px;
-    border-radius: 5px;
-    transition: all 500ms ease;
-}
-
-header nav ul li.btn a:hover {
-    background: #a02604; /*при наведении на кнопку - меняется цвет*/
-}
-
-.hero {
-    padding-bottom: 100px;
-    position: relative;
-    z-index: 1;
-}
-
-.hero--info {
-    width: 530px;
-    padding-top: 70px;
-}
-
-.hero--info h2 {
-    color: #E87D0E;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.hero--info h1 {
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.hero--info p {
-    font-weight: 500;
-    line-height: 170%;
-    margin: 30px 0;
-}
-
-.hero--info .btn {
-    background: #FA8305;
-    color: #070707;
-    border-radius: 50px;
-    padding: 15px 30px;
-    border: 0;
-    transition: all 500ms ease;
-    font-size: 18px;
-}
-
-.hero--info .btn:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.hero img {
-    position: absolute;
-    top: -150px;
-    right: 0;
+.header_logo .logo_img .logo_info {
+    max-width: 100%; /*если картинка логотипа будет больше, то она подстроитсяя под размер*/
+    display: block; /*по умолчанию у картинок есть отступ, мы его убираем*/
 }
