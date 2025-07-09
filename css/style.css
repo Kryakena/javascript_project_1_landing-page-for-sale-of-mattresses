@@ -1,19 +1,45 @@
 .wrapper {
   display: grid;
-  grid-template-areas:  "f f f f f i i i"
-                        "f f f f f i i i"
-                        "f f f f f i i i"
-                        "f f f f f o b b"
-                        "f f f f f n b b";
+  gap: 20px;
 }
 
-.wrapper * {
-  background-color: rgba(255, 255, 255); 
+.header {
+  font-weight: 1400px;
+  height: 185px;
+  background-color: white;
 }
 
-.logo_img { grid-area: f; }
-.B { grid-area: i; }
-.C { grid-area: b; }
-.D { grid-area: o; }
-.E { grid-area: n; }
+.header_logo {
+  font-weight: 350px;
+  height: 60px;
+  padding-left: 300px;
+  padding-top: 46px;
+}
 
+.logo_info {
+  font-weight: 406px;
+  height: 43px;
+  padding: 5px 1px;
+  padding-left: 300px;
+  padding-top: 10px;
+}
+
+.logo_info_icon {
+  font-weight: 40px;
+  height: 40px;
+}
+
+.logo_info_text {
+  font-weight: 90px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  vertical-align: top;
+}
+
+.header_menu {
+  font-weight: 860px;
+  height: 64px;
+  padding-left: 523px;
+  padding-top: 37px;
+}
