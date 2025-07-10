@@ -1,12 +1,15 @@
 .wrapper {
-  display: grid;
   gap: 20px;
 }
 
 .header {
   font-weight: 1400px;
   height: 185px;
+}
+
+.navbar {
   background-color: white;
+
 }
 
 .header_logo {
@@ -20,7 +23,7 @@
   font-weight: 406px;
   height: 43px;
   padding: 5px 1px;
-  padding-left: 300px;
+  padding-left: 250px;
   padding-top: 10px;
 }
 
@@ -42,4 +45,43 @@
   height: 64px;
   padding-left: 523px;
   padding-top: 37px;
+}
+
+.contacts {
+  font-size: 20px;
+  font-weight: 500;
+  vertical-align: top;
+}
+
+.contacts_icon_map-pointer {
+  font-weight: 53px;
+  height: 54px;
+}
+
+.contacts_link_map-pointer {
+  font-weight: 226px;
+  height: 74px;
+  text-decoration: none;
+}
+
+.contacts_icon_phone {
+  font-weight: 47px;
+  height: 47px;
+}
+
+.contacts_link_phone {
+  font-weight: 240px;
+  height: 60px;
+  text-decoration: none;
+}
+
+.contacts_icon_VK {
+  font-weight: 47px;
+  height: 47px;
+}
+
+.contacts_link_VK {
+  font-weight: 165px;
+  height: 60px;
+  text-decoration: none;
 }
