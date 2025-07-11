@@ -1,87 +1,208 @@
-.wrapper {
-  gap: 20px;
+/*Обнуление*/
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+/*Стили для демонстрации*/
+.wrapper{
+
 }
 
-.header {
-  font-weight: 1400px;
-  height: 185px;
+/*Основные стили*/
+
+.container{
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
 }
 
-.navbar {
-  background-color: white;
-
+.header { /*фиксируем, чтобы шапка меню всегда была сверху*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50; /*большой, чтобы накрыло весь контент*/
+}
+.header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #387545;
+    z-index: 2; /*чтобы меню открывалось под этой плашкой*/
 }
 
+.header_body {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /*чтобы раскидать наши flex элементы по сторонам*/
+    height: 80px;
+    align-items: center;
+}
 .header_logo {
-  font-weight: 350px;
-  height: 60px;
-  padding-left: 300px;
-  padding-top: 46px;
+    flex: 0 0 60px;
+    border-radius: 50%; /*делаем логотип круглым*/
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.header_logo img{
+    max-width: 100%; /*если картинка логотипа будет больше, то она подстроитсяя под размер*/
+    display: block; /*по умолчанию у картинок есть отступ, мы его убираем*/
 }
 
-.logo_info {
-  font-weight: 406px;
-  height: 43px;
-  padding: 5px 1px;
-  padding-left: 250px;
-  padding-top: 10px;
+.header_burger {
+    display: none; /*для начала скрыть от всех разрешений, которые выше 767px*/
 }
+.header_menu {}
 
-.logo_info_icon {
-  font-weight: 40px;
-  height: 40px;
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
 }
-
-.logo_info_text {
-  font-weight: 90px;
-  height: 30px;
-  font-size: 20px;
-  font-weight: 500;
-  vertical-align: top;
-}
-
-.header_menu {
-  font-weight: 860px;
-  height: 64px;
-  padding-left: 523px;
-  padding-top: 37px;
-}
-
-.contacts {
-  font-size: 20px;
-  font-weight: 500;
-  vertical-align: top;
+.header_list li{
+    list-style: none;
+    margin: 0px 0px 0px 14px;
+    
 }
 
 .contacts_icon_map-pointer {
-  font-weight: 53px;
-  height: 54px;
-}
-
-.contacts_link_map-pointer {
-  font-weight: 226px;
-  height: 74px;
+  width: 40px;
+  height: 40px;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
-.contacts_icon_phone {
-  font-weight: 47px;
-  height: 47px;
-}
-
-.contacts_link_phone {
-  font-weight: 240px;
-  height: 60px;
+.contacts_icon_phone, .contacts_icon_VK {
+  width: 40px;
+  height: 41px;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
-.contacts_icon_VK {
-  font-weight: 47px;
-  height: 47px;
+.header_link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-.contacts_link_VK {
-  font-weight: 165px;
-  height: 60px;
+.btn {
+  font-size: 16px;
+  text-transform: uppercase;
   text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 767px) { /*media запрос, в котором работаем с бургером*/
+    body.lock{
+        overflow: hidden;
+    }
+    .header_body {
+        height: 50px;
+    }
+    .header_logo {
+        flex: 0 0 40px;
+    }
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .header_burger span{
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before,  /*псевдостили для рисования бургера - линии, общие для before и after*/
+    .header_burger:after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before{
+        top: 0;
+    }
+    .header_burger:after{
+        bottom: 0;
+    }
+
+    /*делаем из бургера крестик при развертывании меню*/
+    .header_burger.active:before{ /*линия крестика - сверху слева к снизу справа*/
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header_burger.active:after{ /*линия крестика - сверху справа к снизу слева*/
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header_burger.active span{ /*линия крестика - убираем горизонтальную линию по центру*/
+        transform: scale(0);
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #18b53f;
+        padding: 70px 10px 20px 10px;
+    }
+
+    .header_menu.active{
+        top: 0; /*чтобы меню появлялось при нажатии на бургер*/
+    }
+
+    .header_list {
+        display: block; /*отключаем дисплей фильтр*/
+    }
+    .header_list li{ /*нужны отступы уже не влево, а вниз*/
+        margin: 0px 0px 20px 0px;
+    }
+    .header_link {
+        font-size: 24px;
+    }
+}
+
+.content_banner {
+  
+}
+
+.content {
+    padding: 100px 0px 0px 0px; /*чтобы шапочка не накрыла часть контента. Это юзабилити - удобство использования*/
+}
+.content_text {
+    font-size: 18px;
+    line-height: 25px;
+}
+.content_text p{
+    margin: 0px 0px 20px 0px;
+}
+
+/*подвинуть контент*/
+@media (max-width: 767px) {
+    .content {
+        padding: 70px 0px 0px 0px;
+    }
 }

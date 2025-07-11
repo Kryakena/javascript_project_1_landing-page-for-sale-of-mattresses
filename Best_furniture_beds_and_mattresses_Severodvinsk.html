@@ -22,48 +22,47 @@
         <div class="container">
           <div class="header_body">
             <a href="#" class="header_logo">
-              <img src="img/logo.png" title="Мебель/Кровати/Матрасы/МатрасовЪ.Северодвинск"/>
-              <a href="https://vk.link/matrasov.severodvinsk"></a>
-            </div>
-
-            <div class="header_menu">
-                <tr class="contacts">
-                  <td>
-                    <img src="img/icon/map-pointer.png" title="г. Северодвинск, ул. Железнодорожная 37" class="contacts_icon_map-pointer"/>
-                    <a href="https://yandex.ru/maps/-/CHgANWnp" class="contacts_link_map-pointer">г. Северодвинск, ул. Железнодорожная 37</a
-                    >
-                  </td>
-                  <td>
-                    <img src="img/icon/phone.png" title="8(921)053-34-04" class="contacts_icon_phone"/>
-                    <p>Ежедневно: 10:00-19:00</p>
-                    <a href="tel:89210533404" class="contacts_link_phone">8(921)053-34-04</a>
-                  </td>
-                  <td>
-                    <img src="img/icon/VK.png" title="Мы в ВКонтакте" class="contacts_icon_VK"/>
-                    <a href="https://vk.com/matrasov.severodvinsk" class="contacts_link_VK">Мы в ВКонтакте</a
-                    >
-                  </td>
-                  <td class="btn">
-                    <button class="btn">
-                      <a href="https://vk.com/im?sel=-185473727" class="contacts_link_btn">Задать вопрос</a
-                      >
-                    </button>
-                  </td>
-                </tr>
-            </div>
-            
+              <img src="img/logo.jpg" alt="" title="Мебель/Кровати/Матрасы/МатрасовЪ.Северодвинск">
+            </a> 
           </div>
+          <div class="header_burger">
+            <span></span> <!--span - нужен для рисования бургера-->
+          </div>
+          <nav class="header_menu"> <!--nav - меню бургера-->
+            <ul class="header_list">
+              <li>
+                <img src="img/icon/map-pointer.png" title="г. Северодвинск, ул. Железнодорожная 37" class="contacts_icon_map-pointer">
+              </li>
+              <li>
+                <a href="https://yandex.ru/maps/-/CHgANWnp" class="header_link">г. Северодвинск, ул. Железнодорожная 37</a>
+              </li>
+              <li>
+                <img src="img/icon/phone.png" title="8(921)053-34-04" class="contacts_icon_phone"/>
+              </li>
+              <li>
+                <p>Ежедневно: 10:00-19:00</p>
+                <a href="tel:89210533404" class="header_link">8(921)053-34-04</a>
+              </li>
+              <li>
+                <img src="img/icon/VK.png" title="Мы в ВКонтакте" class="contacts_icon_VK"/>
+              </li>
+              <li>
+                <a href="https://vk.com/matrasov.severodvinsk" class="header_link">Мы в ВКонтакте</a>
+              </li>
+              <li>
+                <button class="btn">
+                  <a href="https://vk.com/im?sel=-185473727" class="contacts_link_btn">Задать вопрос</a>
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 
       <div class="content">
         <div class="container_1">
           <div class="content_banner">
-            <img
-              src="img/banner_matrasov_zhaklin.gif"
-              alt=""
-              title="Кровать Жаклин"
-            />
+            <img src="img/banner_matrasov_zhaklin.gif" alt="" title="Кровать Жаклин">
           </div>
           <div class="content_text">
             <div class="content_text_title_1">
@@ -345,39 +344,7 @@
                 />
                 <a href="https://vk.link/matrasov.severodvinsk"></a>
               </ul>
-              <ul class="logo_info">
-                <li>
-                  <img
-                    src="img/icon/furniture.png"
-                    title="Мебель"
-                    class="logo_info_icon"
-                  />
-                </li>
-                <li>
-                  <a class="logo_info_text">Мебель</a>
-                </li>
-                <li>
-                  <img
-                    src="img/icon/bed.png"
-                    title="Кровати"
-                    class="logo_info_icon"
-                  />
-                </li>
-                <li>
-                  <a class="logo_info_text">Кровати</a>
-                </li>
-                <li>
-                  <img
-                    src="img/icon/mattress.png"
-                    title="Матрасы"
-                    class="logo_info_icon"
-                  />
-                </li>
-                <li>
-                  <a class="logo_info_text">Матрасы</a>
-                </li>
-              </ul>
-            </div>
+
 
             <div class="product_navigation">
               <ul class="product_navigation_main">
@@ -426,5 +393,9 @@
         <div class="author"><p>Светлана Шерстобитова © 2025</p></div>
       </footer>
     </div>
+    <!--подключаем jQuery--> <!--jQuery - если он уже есть в проекте-->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!--подключаем файл JS скриптов-->
+    <script src="js/header_burger.js"></script>
   </body>
 </html>
