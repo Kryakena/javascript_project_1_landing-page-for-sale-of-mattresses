@@ -1,30 +1,37 @@
-*,*:before,*:after{
+*,
+*:before,
+*:after {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
-.container {
-    max-width: 1180px;
+body {
+    background-color: #CCF3BE;
+}
+
+.wrapper {
+    width: 1170px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    text-align: left;
 }
 
 .header {
     width: 100%;
     height: auto;
     background-color: #fff;
+    position: relative;
 }
 
 .header_logo {
     width: 100%;
-    height: auto;
-}
-
-.content_banner {
     height: auto;
 }
 
@@ -33,12 +40,16 @@ html,body{
     height: 40px;
 }
 
+
+
+
 .contacts_icon_map-pointer {
     width: 33px;
     height: 34px;
 }
 
-.contacts_icon_phone, .contacts_icon_VK {
+.contacts_icon_phone,
+.contacts_icon_VK {
     width: 30px;
     height: 30px;
 }
@@ -48,35 +59,30 @@ a {
     color: black;
 }
 
-.btn {
-    background-color: #a447bf;
-    border-color: #a447bf;
-    color: #ffffff;
-    transition: background-color ease .5s, border-color ease .5s;
-    padding-left: 4px;
-    padding-right: 4px;
-    width: 100%;
-    padding: 16px 26px 14px;
-    font-size: .7333em;
-    font-weight: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 0;
-    border: 1px solid;
-    letter-spacing: .8px;
-    border-radius: 3px;
-    padding: 12px 21px 11px;
-    overflow: hidden;
-    transition: background-color .3s ease;
-    -moz-transition: background-color .3s ease;
-    -ms-transition: background-color .3s ease;
-    -o-transition: background-color .3s ease;
-    -webkit-transition: background-color .3s ease;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0, 0, 0);
+.content_banner {
+    width: 1170px;
+    height: 401px;
 }
 
+.content_text_title_1 {
+    text-align: center;
+}
+
+.content_text_info_left,
+.content_text_info_right {
+    text-align: justify;
+}
+
+.wave-btn_container {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
