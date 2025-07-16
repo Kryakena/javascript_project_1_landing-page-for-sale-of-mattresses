@@ -320,7 +320,7 @@ a {
 	display: none;
 	place-items: center;
 	border-radius: 50%;
-	box-shadow: 0 0 6px rgba(215, 23, 233, 0.2);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 }
 
@@ -334,4 +334,12 @@ a {
 	place-items: center;
 	font-size: 35px;
 	color: #001a2e;
+}
+
+@media (max-width: 768px) {
+	#progress {
+		position: fixed;
+		bottom: 130px;
+		right: 15px;
+	}
 }
