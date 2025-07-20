@@ -310,36 +310,3 @@ a {
     width: 100%;
     height: 326px;
 }
-
-#progress {
-	position: fixed;
-	bottom: 120px;
-	right: 25px;
-	height: 50px;
-	width: 50px;
-	display: none;
-	place-items: center;
-	border-radius: 50%;
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-	cursor: pointer;
-}
-
-#progress-value {
-	display: block;
-	height: calc(100% - 10px);
-	width: calc(100% - 10px);
-	background-color: #ffffff;
-	border-radius: 50%;
-	display: grid;
-	place-items: center;
-	font-size: 35px;
-	color: #001a2e;
-}
-
-@media (max-width: 768px) {
-	#progress {
-		position: fixed;
-		bottom: 130px;
-		right: 15px;
-	}
-}
