@@ -1,4 +1,4 @@
-.wave-btn:hover {
+.btn:hover {
     border-radius: 10px; /*чтобы со всех сторон были пиксели*/
 
     /*снова добавляем анимацию при hover, чтобы она заиграла немного позже - вместо 0s делаем 0.2s*/
@@ -15,14 +15,14 @@
 }
 
 /*анимация заполнения водой кнопки при наведении курсора*/
-.wave-btn:hover .wave-btn_waves{ /*к кнопке добавляем псевдокласс hover с обращением к нашим волнам .wave-btn_waves*/
+.btn:hover .btn_waves{ /*к кнопке добавляем псевдокласс hover с обращением к нашим волнам .wave-btn_waves*/
     top: -50px;
     /*чтобы слишком быстро не заполнялась водой, то в разделе .wave-btn_waves изменяем анимацию с 0.3s на 0.8s*/
 }
 
 
 /*анимация волны у кнопки*/
-.wave-btn {
+.btn {
     /*ширину и высоту потом придется регулировать*/
     width: 280px;
     height: 60px;
@@ -52,7 +52,7 @@
     /*убираем подчеркивание у ссылки кнопки*/
     text-decoration: none;
 }
-.wave-btn_text {
+.btn_text {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     /*задаем белый цвет*/
     color: #000000;
@@ -66,7 +66,7 @@
     position: relative;
     z-index: 1;
 }
-.wave-btn_waves {
+.btn_waves {
     position: absolute;
     width: 280px;
     height: 280px;
@@ -85,8 +85,8 @@
 }
 
 /*общие стили для псевдоэлементов*/
-.wave-btn_waves:after,
-.wave-btn_waves:before {
+.btn_waves:after,
+.btn_waves:before {
     content: "";
     position: absolute;
     top: 0;
@@ -102,7 +102,7 @@
 }
 
 /*стили для каждого псевдоэлемента*/
-.wave-btn_waves:before{
+.btn_waves:before{
     background-color: #CCF3BE; /*абсолютно черный*/
     border-radius: 48%;
 
@@ -112,7 +112,7 @@
     -moz-animation: waves 5s infinite linear;
     -o-animation: waves 5s infinite linear;
 }
-.wave-btn_waves:after{
+.btn_waves:after{
     background-color: rgba(87, 146, 39, 0.5); /*полупрозрачный черный*/
     border-radius: 44%;
 

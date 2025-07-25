@@ -1,0 +1,37 @@
+body {
+    max-width: 1180px;
+    margin: auto;
+    padding: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header > a {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 15px;
+    align-items: center;
+}
+
+.header img {
+    max-width: 300px;
+}
+
+.btn-contacts {
+    align-items: center;
+}
+
+.btn_info {
+    font-weight: 600;
+}
+
+
+.content_banner {
+    max-width: 600px;
+}
+
