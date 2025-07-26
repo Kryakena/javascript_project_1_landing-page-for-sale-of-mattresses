@@ -31,11 +31,38 @@ a {
     font-weight: 600;
 }
 
-
-.content_banner {
-    max-width: 600px;
+.content {
+    background-color: rgb(204, 243, 190);
+    height: 100%;
 }
 
-.container {
-    
+.advantages {
+    display: flex;
+    height: 100%;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.advantages_banner {
+    max-width: 750px;
 }
+
+.advantages_description {
+    max-width: 400px;
+}
+
+.numbers {
+    max-width: 1180px;
+    display: flex;
+    align-items: center;
+}
+
+.catalog_header {
+    max-width: 385px;
+    display: flex;
+    height: 100%;
+    margin: auto;
+    padding: 15px;
+}
+
