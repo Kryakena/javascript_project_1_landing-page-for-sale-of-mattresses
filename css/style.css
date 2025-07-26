@@ -9,17 +9,18 @@ a {
   color: #000000;
 }
 
-.header > a {
+.header {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
     background-color: rgb(255, 255, 255);
     padding: 0px 15px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header img {
-    max-width: 300px;
+    max-width: 280px;
 }
 
 .btn-contacts {
@@ -35,3 +36,6 @@ a {
     max-width: 600px;
 }
 
+.container {
+    
+}
