@@ -45,24 +45,23 @@ a {
 
 .advantages {
     display: flex;
-    height: 100%;
-    padding: 15px;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    max-width: 1150px;
+    justify-content: space-around; 
 }   
 
 .advantages_banner {
-    max-width: 750px;
+    max-height: 224px;
 }
 
 .advantages_description {
-    max-width: 370px;
+    max-height: 224px;
 }
 
 .numbers {
-    max-width: 1150px;
-    display: flex;
-    align-items: center;
+    max-width: 100%;
 }
 
 .catalog_header {
