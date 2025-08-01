@@ -87,7 +87,7 @@
 
 .button:hover .button_text:before, /*цвет кнопки меняется при наведении*/
 .button:hover .button_text:after{
-    background-color: #c332f0;
+    background-color: #a318b5;
 }
 
 .button:hover .button_text:before {

@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: bottom;
   border-style: none;
 }
 
@@ -29,14 +29,15 @@
 }
 
 .button-cart {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
 
 .button-cart-1 {
   position: absolute;
+  display: flex;
   left: 24px;
   right: 24px;
   bottom: 24px;
@@ -44,7 +45,7 @@
 }
 
 .field-button-card {
-  margin-top: 12px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 1439px) {
@@ -53,10 +54,6 @@
     right: 16px;
     bottom: 16px;
     top: 16px;
-  }
-
-  .field-button-card {
-    margin-top: 8px;
   }
 }
 
@@ -67,10 +64,6 @@
 
   .cart-1 {
     width: calc(50% - (1 - 1/2)*14px);
-  }
-
-  .field-button-card {
-    display: none;
   }
 }
 
@@ -107,18 +100,19 @@
 
 .button_text_1 {
     position: relative;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 50px;
+    padding: 0px 10px;
     border-radius: 50px;
-    font-size: 24px;
+    font-size: 16px;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
-    letter-spacing: 10px;
+    letter-spacing: 1px;
     transition: all 1s ease 0s; /*анимация*/
-    top: 0;
+    top: 530px;
+    left: 40px;
     overflow: hidden;
 }
 .button_text_1:before,
@@ -157,7 +151,7 @@
 
 .button-cart:hover .button_text_1:before, /*цвет кнопки меняется при наведении*/
 .button-cart:hover .button_text_1:after{
-    background-color: #18b5a4;
+    background-color: #a318b5;
 }
 
 .button-cart:hover .button_text_1:before {
@@ -167,7 +161,7 @@
 .button-cart:active .button_text_1 { /*видим анимацию нажатия кнопки*/
     top: -7px;
     transition: all 0.1s ease 0s;
-    box-shadow: 0 2px 0px 0 #0c5b52;
+    box-shadow: 0 2px 0px 0 #4b0c5b;
 }
 
 @keyframes rotate { /*крутим элементы вокруг кнопки*/
