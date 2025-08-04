@@ -69,6 +69,16 @@ a:active,a:hover {
     max-height: 224px;
 }
 
+.statistics_img {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .numbers {
     max-width: 100%;
 }
