@@ -1,6 +1,6 @@
 *,*:before,*:after{
     padding: 0;
-    margin: 0;
+    margin: auto;
     border: 0;
     box-sizing: border-box;
 }
@@ -10,13 +10,17 @@ html,body{
 }
 
 .wrapper{
-    width: 100%;
-    min-height: 100%;
+    width: 1400px;
     overflow: hidden;
 }
 
 .header {
+    height: 190px;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
 .header_logo {
@@ -62,7 +66,7 @@ html,body{
 }
 
 .statistics {
-    background-color: #FFFFFF;
+    background-color: #CCF3BE;
 }
 
 .statistics_numbers {
@@ -103,7 +107,8 @@ html,body{
     height: 630px;
 }
 
-.product_button_1 {}
+.product_button_1 {
+}
 
 .product_button_1_face {
     width: 185px;
