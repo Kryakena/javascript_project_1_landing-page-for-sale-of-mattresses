@@ -434,24 +434,29 @@ html,body{
 
 .product {
     background-color: #CCF3BE;
+}
 
-    display: block;
-    flex-wrap: wrap;
-    
+.product_table {
+    display: grid;
 
-    overflow: hidden;
-    position: relative;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: baseline;
+    grid-template-columns: auto auto auto;
+    /* Два ряда */
+    grid-template-rows: auto auto auto;
+    /* Автоматическое размещение в ряд */
+    grid-auto-flow: row;
+    /* Отступы между ячейками */
+    gap: 20px;
+    grid-template-areas:
+    "product_1_img product_2_img product_3_img"
+    "product_4_img product_5_img product_6_img"
+    "product_7_img product_8_img product_9_img";
 }
 
 .product_1 {}
 
 .product_1_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_1 {
@@ -470,7 +475,7 @@ html,body{
 
 .product_2_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_2 {}
@@ -488,7 +493,7 @@ html,body{
 
 .product_3_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_3 {}
@@ -506,7 +511,7 @@ html,body{
 
 .product_4_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_4 {}
@@ -524,7 +529,7 @@ html,body{
 
 .product_5_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_5 {}
@@ -542,7 +547,7 @@ html,body{
 
 .product_6_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_6 {}
@@ -560,7 +565,7 @@ html,body{
 
 .product_7_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_7 {}
@@ -578,7 +583,7 @@ html,body{
 
 .product_8_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_8 {}
@@ -596,7 +601,7 @@ html,body{
 
 .product_9_img {
     width: 370px;
-    height: 630px;
+    height: 645px;
 }
 
 .product_button_9 {}
