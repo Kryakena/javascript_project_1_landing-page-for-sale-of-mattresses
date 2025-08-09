@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-.header {
+.information {
     height: 190px;
     background-color: #FFFFFF;
     display: flex;
@@ -30,17 +30,17 @@ a {
     justify-items: center;
 }
 
-.header_logo {
+.information_logo {
     width: 420px;
     height: 140px;
 }
 
-.header_tel {
+.information_tel {
     width: 335px;
     height: 115px;
 }
 
-.header_btn_face {
+.information_btn_face {
     width: 100%;
     min-height: 100%;
     height: 100%;
@@ -231,7 +231,7 @@ a {
     }
 }
 
-.header_the_text_under_the_btn_img {
+.information_the_text_under_the_btn_img {
     width: 280px;
     height: 56px;
 }
@@ -559,54 +559,6 @@ a {
     padding-bottom: 20px;
 }
 
-.map-yandex { 
-    width: 500px;
-    height: 400px; 
-}
-
-.footer {
-    height: 190px;
-    background-color: #FFFFFF;
-    display: flex;
-    
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    justify-items: center;
-}
-
-.footer_logo {
-    width: 420px;
-    height: 140px;
-}
-
-.footer_tel {
-    width: 335px;
-    height: 115px;
-}
-
-.footer_btn_face {
-    width: 100%;
-    min-height: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_the_text_under_the_btn_img {
-    width: 280px;
-    height: 56px;
-}
-
-.author {}
 
 .author p {
     color: #000000;
@@ -615,4 +567,42 @@ a {
     font-size: 14px; 
     line-height: 1.1875;
     text-align: left;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  background: #b992be;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #BC35BE;
+  stroke-linecap: round; 
+  stroke-linejoin: round; 
+  stroke-width: 2;
+}
+
+.progress-bar {
+  height: 1rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
