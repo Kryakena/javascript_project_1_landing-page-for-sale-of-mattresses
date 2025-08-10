@@ -1,33 +1,18 @@
-const showOnPx = 100;
-const backToTopButton = document.querySelector(".back-to-top");
-const pageProgressBar = document.querySelector(".progress-bar");
-
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-};
-
-const goToTop = () => {
-  document.body.scrollIntoView({
-    behavior: "smooth"
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.getElementById("back-to-top");
+ 
+  // Показать/скрыть кнопку при прокрутке страницы
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset &gt; 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
   });
-};
-
-document.addEventListener("scroll", () => {
-  console.log("Scroll Height: ", scrollContainer().scrollHeight);
-  console.log("Client Height: ", scrollContainer().clientHeight);
-
-  const scrolledPercentage =
-    (scrollContainer().scrollTop /
-      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
-    100;
-
-  pageProgressBar.style.width = `${scrolledPercentage}%`;
-
-  if (scrollContainer().scrollTop > showOnPx) {
-    backToTopButton.classList.remove("hidden");
-  } else {
-    backToTopButton.classList.add("hidden");
-  }
+ 
+  // Плавная прокрутка при клике на кнопку
+  backToTop.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
-
-backToTopButton.addEventListener("click", goToTop);
