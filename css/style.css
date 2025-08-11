@@ -554,6 +554,7 @@ a {
 }
 
 .contacts_img {
+    display: grid;
     width: 325px;
     height: 160px;
     padding-bottom: 20px;
