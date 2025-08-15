@@ -1,15 +1,15 @@
-*,*:before,*:after{
+*,*:before,*:after {
     padding: 0;
     margin: auto;
     border: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,body {
     height: 100%;
 }
 
-.wrapper{
+.wrapper {
     width: 1400px;
     padding: 10px;
     overflow: hidden;
@@ -20,12 +20,11 @@ a {
 }
 
 .header {
-    /*фиксируем, чтобы шапка меню всегда была сверху*/
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 50; /*большой, чтобы накрыло весь контент*/
+    z-index: 50;
     background-color: #FFFFFF;
     display: flex;
     
@@ -35,7 +34,7 @@ a {
     justify-items: center;
 }
 
-.header:before{
+.header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -43,7 +42,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    z-index: 2; /*чтобы меню открывалось под этой плашкой*/
+    z-index: 2;
 }
 
 .container {
@@ -55,7 +54,7 @@ a {
 .header_body {
     position: relative;
     display: flex;
-    justify-content: space-between; /*чтобы раскидать наши flex элементы по сторонам*/
+    justify-content: space-between;
     height: 190px;
     align-items: center;
 }
@@ -65,16 +64,15 @@ a {
     overflow: hidden;
     position: relative;
     z-index: 3;
-
 }
 
-.header_logo img{
+.header_logo img {
     width: 420px;
     height: 140px;
 }
 
 .header_burger {
-    display: none; /*для начала скрыть от всех разрешений, которые выше 767px*/
+    display: none;
 }
 
 .header_list {
@@ -83,7 +81,7 @@ a {
     z-index: 2;
 }
 
-.header_list li{
+.header_list li {
     list-style: none;
     margin: 0px 0px 0px 20px;
 }
@@ -95,7 +93,7 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 800px) { /*media запрос, в котором работаем с бургером*/
+@media (max-width: 1104px) {
     body.lock{
         overflow: hidden;
     }
@@ -104,9 +102,11 @@ a {
     }
     .header_logo {
         flex: 0 0 40px;
+    }
+    .header_logo img {
         width: 140px;
         height: 45px;
-    }
+    }   
     .header_burger {
         display: block;
         position: relative;
@@ -123,7 +123,7 @@ a {
         top: 9px;
         transition: all 0.3s ease 0s;
     }
-    .header_burger:before,  /*псевдостили для рисования бургера - линии, общие для before и after*/
+    .header_burger:before,
     .header_burger:after{
         content: '';
         background-color: #000000;
@@ -140,16 +140,15 @@ a {
         bottom: 0;
     }
 
-    /*делаем из бургера крестик при развертывании меню*/
-    .header_burger.active:before{ /*линия крестика - сверху слева к снизу справа*/
+    .header_burger.active:before{
         transform: rotate(45deg);
         top: 9px;
     }
-    .header_burger.active:after{ /*линия крестика - сверху справа к снизу слева*/
+    .header_burger.active:after{
         transform: rotate(-45deg);
         bottom: 9px;
     }
-    .header_burger.active span{ /*линия крестика - убираем горизонтальную линию по центру*/
+    .header_burger.active span{
         transform: scale(0);
     }
 
@@ -166,29 +165,25 @@ a {
     }
 
     .header_menu.active{
-        top: 0; /*чтобы меню появлялось при нажатии на бургер*/
+        top: 0;
     }
 
     .header_list {
-        display: block; /*отключаем дисплей фильтр*/
+        display: block;
     }
-    .header_list li{ /*нужны отступы уже не влево, а вниз*/
+    .header_list li{ 
         margin: 0px 0px 20px 0px;
     }
     .header_link {
         font-size: 24px;
     }
-}
-
-.content {
-    padding: 190px 0px 0px 0px; /*чтобы шапочка не накрыла часть контента. Это юзабилити - удобство использования*/
-}
-
-/*подвинуть контент*/
-@media (max-width: 800px) {
     .content {
         padding: 70px 0px 0px 0px;
     }
+}
+
+.content {
+    padding: 190px 0px 0px 0px;
 }
 
 .information {
