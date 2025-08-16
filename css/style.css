@@ -97,15 +97,22 @@ a {
     body.lock{
         overflow: hidden;
     }
+    .wrapper {
+        width: 1104px;
+        padding: 5px;
+    }
+    .header {
+        margin: 20px;
+    }
     .header_body {
-        height: 50px;
+        height: 70px;
     }
     .header_logo {
-        flex: 0 0 40px;
+        flex: 2 1 auto;
     }
     .header_logo img {
-        width: 140px;
-        height: 45px;
+        width: 210px;
+        height: 70px;
     }   
     .header_burger {
         display: block;
