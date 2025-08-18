@@ -677,7 +677,14 @@ a {
         padding: 5px;
     }
     .header {
-        margin: 20px;
+        margin: 0px;
+        
+        display: flex;
+    
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
     }
     .header_body {
         height: auto;
