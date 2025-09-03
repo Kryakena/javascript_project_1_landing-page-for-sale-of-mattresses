@@ -688,7 +688,6 @@ a {
     }
     .wrapper {
         width: 1104px;
-
     }
     .container {
         width: 1104px;
@@ -766,7 +765,7 @@ a {
     }
 
     .header_menu.active{
-        top: 0;
+        top: 50px;
     }
 
     .header_list {
