@@ -340,13 +340,13 @@ a {
 }
 
 .advantages_banner {
-    width: 830px;
-    height: 340px;
+    width: 374px;
+    height: 316px;
 }
 
 .advantages_description {
-    width: 500px;
-    height: 310px;
+    width: 374px;
+    height: 316px;
 
     color: #000000; 
     font-family: Arial;
@@ -358,7 +358,7 @@ a {
 
 .advantages_description h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .advantages_description_1 {
