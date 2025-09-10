@@ -330,23 +330,23 @@ a {
 
 .advantages {
     background-color: #CCF3BE;
-    height: 410px;
+    height: auto;
+    padding: 15px 10px 10px 10px;
     display: flex;
     
     align-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     justify-items: center;
 }
 
 .advantages_banner {
-    width: 830px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
 }
 
 .advantages_description {
-    width: 500px;
-    height: 310px;
+    
 
     color: #000000; 
     font-family: Arial;
