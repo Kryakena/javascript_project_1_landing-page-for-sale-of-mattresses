@@ -340,8 +340,8 @@ a {
 }
 
 .advantages_banner {
-    max-height: 90%;
-    max-width: 90%;
+    width: 830px;
+    height: 340px;
 }
 
 .advantages_description {
