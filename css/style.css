@@ -333,27 +333,23 @@ a {
     height: auto;
     padding: 15px 10px 10px 10px;
     display: flex;
-    
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
 }
 
 .advantages_banner {
     width: 100%;
     height: 100%;
+    padding-left: 200px;
 }
 
 .advantages_description {
-    
-
     color: #000000; 
     font-family: Arial;
     font-weight: bold;
     font-size: 20px; 
     line-height: 1.1875;
     text-align: left;
+
+    padding-right: 150px;
 }
 
 .advantages_description h1 {
@@ -362,13 +358,13 @@ a {
 }
 
 .advantages_description_1 {
-    width: 445px;
+    width: 550px;
     height: 181px;
 }
 
 .advantages_description_1 img {
-    width: 35px;
-    height: 32px;
+    width: 22px;
+    height: 20px;
 }
 
 .statistics {
@@ -383,8 +379,8 @@ a {
 }
 
 .statistics_numbers {
-    width: 1180px;
-    height: 191px;
+    width: 100%;
+    height: 100%;
 }
 
 .catalog {
@@ -656,24 +652,30 @@ a {
 
 .contacts {
     background-color: #CCF3BE;
+    padding: 20px;
 
-    display: grid;
+    display: flex;
     
-    align-content: center;
     align-items: center;
     justify-content: center;
     justify-items: center;
-
-    padding: 20px;
 }
 
-.contacts_img {
-    display: grid;
-    width: 325px;
-    height: 160px;
-    padding-bottom: 20px;
+.contacts_link {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
 }
 
+.contacts_link p {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts_link h1 {
+    text-align: center;
+    font-size: 32px;
+}
 
 .author p {
     color: #000000;
@@ -825,5 +827,9 @@ a {
         width: 553px;
         height: 255px;
         padding-top: 5px;
+    }
+    .advantages_description_1 img {
+        width: 22px;
+        height: 20px;
     }
 }
