@@ -385,18 +385,28 @@ a {
 
 .catalog {
     background-color: #CCF3BE;
-    height: 150px;
-    display: flex;
     
-    align-content: center;
+    display: flex;
+
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     justify-items: center;
+
+    padding: 20px;
 }
 
-.catalog_title {
-    width: 415px;
-    height: 95px;
+.catalog_description h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.catalog_description {
+    color: #000000; 
+    font-family: Arial;
+   
+    font-size: 20px; 
+    line-height: 1.1875;
+    text-align: center;
 }
 
 .catalog_btn {
@@ -405,7 +415,7 @@ a {
     
     align-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     justify-items: center;
 
     padding: 10px;
