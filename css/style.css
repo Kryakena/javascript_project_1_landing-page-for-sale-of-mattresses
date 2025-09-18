@@ -800,10 +800,10 @@ a {
         transform: rotate(-45deg);
         bottom: 9px;
     }
-    .header_burger.active span{
+    .header_burger.active span{  
         transform: scale(0);
     }
-
+ 
     .header_menu {
         position: fixed;
         top: -100%;
