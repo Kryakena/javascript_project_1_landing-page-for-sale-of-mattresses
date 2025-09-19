@@ -728,7 +728,7 @@ a {
   background-color: #BC35BE; 
 }
 
-@media (max-width: 1104px) {
+/*@media (max-width: 1104px) {
     body.lock{
         overflow: hidden;
     }
@@ -854,4 +854,4 @@ a {
         width: 20px;
         height: 20px;
     }
-}
+}*/
