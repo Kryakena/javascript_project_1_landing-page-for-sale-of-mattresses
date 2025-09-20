@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 640px) {
 
     *,*:before,*:after {
         padding: 0;
@@ -12,7 +12,7 @@
     }
 
     .wrapper { /*width, padding*/
-        width: 425px;
+        width: 640px;
         padding: 5px;
         overflow: hidden;
     }
@@ -48,7 +48,7 @@
     }
 
     .container { /*max-width*/
-        max-width: 425px;
+        max-width: 640px;
         margin: 0px auto;
         padding: 0px 10px;
     }
