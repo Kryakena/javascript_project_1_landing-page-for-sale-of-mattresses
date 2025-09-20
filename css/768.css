@@ -1,4 +1,4 @@
-@media (max-width: 390px) {
+@media (max-width: 768px) {
 
     *,*:before,*:after {
         padding: 0;
@@ -12,8 +12,8 @@
     }
 
     .wrapper { /*width, padding*/
-        width: 390px;
-        padding: 5px;
+        width: 768px;
+        padding: 0;
         overflow: hidden;
     }
 
@@ -32,7 +32,7 @@
         
         align-content: center;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         justify-items: center;
     }
 
@@ -48,7 +48,7 @@
     }
 
     .container { /*max-width*/
-        max-width: 390px;
+        max-width: 768px;
         margin: 0px auto;
         padding: 0px 10px;
     }
@@ -131,7 +131,7 @@
         overflow: auto;
         transition: all 0.3s ease 0s;
         background-color: #ffffff;
-        padding: 70px 10px 20px 10px;
+        padding: 140px 20px 20px 20px;
     }
 
     .header_menu.active{ /*+*/
@@ -157,7 +157,7 @@
 
     .header_link p {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .information_tel_info {
