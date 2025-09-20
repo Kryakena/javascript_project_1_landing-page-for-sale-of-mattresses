@@ -57,7 +57,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        height: 100px;
+        height: 120px;
         align-items: center;
     }
 
@@ -169,7 +169,7 @@
     }
 
     .content { /*padding*/
-        padding: 100px 0px 0px 0px; /*чтобы шапочка не накрыла часть контента. Это юзабилити - удобство использования*/
+        padding: 120px 0px 0px 0px; /*чтобы шапочка не накрыла часть контента. Это юзабилити - удобство использования*/
     }
 
     .information {
