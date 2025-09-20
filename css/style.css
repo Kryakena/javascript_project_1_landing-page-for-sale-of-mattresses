@@ -376,13 +376,9 @@ a {
 
 .statistics_numbers {
     display: flex;
-
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
 }
 
-.statistics_numbers p {
+.statistics_numbers th {
     color: #000000; 
     font-family: Arial;
     font-weight: bold;
