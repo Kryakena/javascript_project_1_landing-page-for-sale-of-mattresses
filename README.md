@@ -3,4 +3,4 @@ Human Coded.
 The web page was created using a layout that I created in Figma.
 <br>
 <br>
-<img width="361" height="1248" alt="2025-09-14_12-20-30" src="https://github.com/user-attachments/assets/00520510-b848-4383-b486-746285459a91" />
+<img width="363" height="1242" alt="2025-09-20_14-13-42" src="https://github.com/user-attachments/assets/91a3449c-828d-49ec-bc3f-0ec2f2efcce2" />
