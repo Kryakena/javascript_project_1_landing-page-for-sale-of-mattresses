@@ -1,26 +1,38 @@
 @media (max-width: 768px) {
 
+    body.lock{
+        overflow: hidden;
+    }
+
     .wrapper {
         width: 758px;
     }
 
-    .container {
+    .header {
+        justify-content: space-around;
+    }
+
+    .container { 
         max-width: 768px;
         margin: 0px;
         padding: 0px;
     }
 
-    .header_body {
+    .header_body { 
         height: 120px;
     }
 
-    .logo {
+    .logo { 
         max-height: 80%;
         max-width: 80%;
     }
 
-    .header_burger {
+    .header_burger { 
         display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
     }
 
     .header_burger span { 
@@ -93,15 +105,20 @@
         padding: 120px 0px 0px 0px; 
     }
 
+    .information_the_text_under_the_btn {
+        font-weight: 700;
+    }
+
     .btn_link { 
         width: 124px;
         height: 22px;
     }
 
-    .btn_text {
+    .btn_text { 
         font-size: 8px; 
         letter-spacing: 1px;
     }
+
 
     .btn_waves { 
         width: 124px;
@@ -109,7 +126,7 @@
     }
 
     .advantages { 
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
         flex-direction: column;
     }
 
@@ -122,7 +139,7 @@
         padding-right: 0px;
     }
 
-    .statistics_numbers th { 
+    .statistics_numbers th {
         font-size: 20px; 
     }
 
@@ -130,7 +147,7 @@
         font-size: 25px; 
     }
 
-    .product { 
+    .product {
         padding: 0px;
     }
 
@@ -144,7 +161,7 @@
         padding: 0px 0px 15px 0px;
     }
 
-    .product_img {
+    .product_img { 
         width: 164px;
         height: 286px;
     }
@@ -162,7 +179,7 @@
 
     .feedback_table { 
         grid-template-rows: auto;
-        grid-auto-flow: row;
+        grid-auto-flow: row; 
         gap: 10px;
         padding-bottom: 10px;
     }
@@ -170,6 +187,7 @@
     .feedback_list { 
         width: 240px;
         height: 340px;
+        padding: 15px;
     }
 
     .feedback_list p { 
