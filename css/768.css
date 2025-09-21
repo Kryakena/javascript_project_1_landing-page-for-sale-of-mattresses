@@ -160,8 +160,8 @@
         justify-content: space-around;
     }
 
-    .information_tel_info {
-        font-size: 36px;
+    .information_tel_info { /*font-size*/
+        font-size: 30px;
     }
 
     .information_tel_info a {
