@@ -111,28 +111,6 @@ a {
     padding: 150px 0px 0px 0px;
 }
 
-.information {
-    height: 190px;
-    background-color: #FFFFFF;
-    display: flex;
-    
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    justify-items: center;
-}
-
-.information_logo {
-    width: 420px;
-    height: 140px;
-}
-
-.information_tel {
-    width: 30px;
-    height: 30px;
-    border-radius: 10%;
-}
-
 .information_btn_face {
     width: 100%;
     min-height: 100%;
@@ -166,7 +144,6 @@ a {
 .btn_link:hover .btn_waves{ 
     top: -50px;
 }
-
 
 .btn_link {
     width: 280px;
@@ -688,6 +665,21 @@ a {
 .contacts_link h1 {
     text-align: center;
     font-size: 32px;
+}
+
+.information {
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.author {
+    padding: 10px;
 }
 
 .author p {
