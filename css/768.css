@@ -161,7 +161,7 @@
     }
 
     .information_tel_info { /*font-size*/
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .information_tel_info a {
@@ -198,20 +198,21 @@
         font-weight: 700;
     }
 
-    .advantages {
+    .advantages { /*padding, flex-direction*/
         background-color: #CCF3BE;
         height: auto;
-        padding: 15px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
         display: flex;
+        flex-direction: column;
     }
 
-    .advantages_banner {
+    .advantages_banner { /*padding-left*/
         width: 100%;
         height: 100%;
-        padding-left: 200px;
+        padding-left: 0px;
     }
 
-    .advantages_description {
+    .advantages_description { /*padding-top, padding-right*/
         color: #000000; 
         font-family: Arial;
         font-weight: bold;
@@ -219,7 +220,8 @@
         line-height: 1.1875;
         text-align: left;
 
-        padding-right: 150px;
+        padding-top: 10px;
+        padding-right: 0px;
     }
 
     .advantages_description h1 {
