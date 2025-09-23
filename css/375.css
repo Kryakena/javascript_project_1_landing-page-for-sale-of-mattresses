@@ -1,0 +1,488 @@
+@media (max-width: 425px) {
+
+    body.lock{ /*+*/
+        overflow: hidden;
+    }
+
+    *,*:before,*:after {
+        padding: 0;
+        margin: auto;
+        border: 0;
+        box-sizing: border-box;
+    }
+
+    html,body {
+        height: 100%;
+    }
+
+    .wrapper { /*width*/
+        width: 425px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .header { /*justify-content*/
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        background-color: #FFFFFF;
+        display: flex;
+        
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+    }
+
+    .header:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 2;
+    }
+
+    .container { /*max-width, margin, padding*/
+        max-width: 425px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header_body { /*height*/
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        align-items: center;
+    }
+
+    .header_logo { 
+        overflow: hidden;
+        position: relative;
+        z-index: 3;
+
+        display: grid;
+        grid-row-gap: 5px;
+    }
+
+    .logo { /*max-height, max-width*/
+        max-height: 80%;
+        max-width: 80%;
+    }
+
+    .header_burger { /*+*/
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header_burger span { /*+*/
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before,  /*псевдостили для рисования бургера - линии, общие для before и after*/
+    .header_burger:after { /*+*/
+        content: '';
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before{ /*+*/
+        top: 0;
+    }
+    .header_burger:after{ /*+*/
+        bottom: 0;
+    }
+
+    /*делаем из бургера крестик при развертывании меню*/
+    .header_burger.active:before{ /*линия крестика - сверху слева к снизу справа*/
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header_burger.active:after{ /*линия крестика - сверху справа к снизу слева*/
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header_burger.active span{ /*линия крестика - убираем горизонтальную линию по центру*/
+        transform: scale(0);
+    }
+
+    .header_menu { /*+*/
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #ffffff;
+        padding: 140px 20px 20px 20px;
+    }
+
+    .header_menu.active{ /*+*/
+        top: 0; /*чтобы меню появлялось при нажатии на бургер*/
+    }
+
+    .header_list { /*display*/
+        display: block; /*отключаем дисплей фильтр*/
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_list li { /*margin*/
+        list-style: none;
+        margin: 0px 0px 20px 0px; /*нужны отступы уже не влево, а вниз*/
+    }
+
+    .header_link {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .header_link p {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .information_tel_info { /*font-size*/
+        font-size: 25px;
+    }
+
+    .information_tel_info a {
+        color: #BC35BE;
+    }
+
+    .content { /*padding*/
+        padding: 120px 0px 0px 0px; /*чтобы шапочка не накрыла часть контента. Это юзабилити - удобство использования*/
+    }
+
+    .information_the_text_under_the_btn {
+        font-weight: 700;
+    }
+
+    .advantages { /*padding, flex-direction*/
+        background-color: #CCF3BE;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advantages_banner { /*padding-left*/
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+    }
+
+    .advantages_description { /*font-size, padding-top, padding-right*/
+        color: #000000; 
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 14px; 
+        line-height: 1.1875;
+        text-align: left;
+
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+
+    .advantages_description h1 { /*font-size*/
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .advantages_description_1 { /*width, height*/
+        width: auto;
+        height: auto;
+    }
+
+    .advantages_description_1 img { /*width, height*/
+        width: 16px;
+        height: 14px;
+    }
+
+    .statistics {
+        background-color: #ffffff;
+        width: auto;
+        height: auto;
+    }
+
+    .statistics_numbers {
+        display: flex;
+        padding: 2%;
+    }
+
+    .statistics_numbers th { /*font-size*/
+        color: #000000; 
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 10px; 
+        line-height: 1.1875;
+        text-align: center;
+    }
+
+    .statistics_numbers font { /*font-size, padding-right*/
+        font-size: 15px; 
+        padding-right: 5px;
+    }
+
+    .catalog { /*padding*/
+        background-color: #CCF3BE;
+        
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        padding: 10px;
+    }
+
+    .catalog_description h1 { /*font-size*/
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .catalog_description { /*font-size*/
+        color: #000000; 
+        font-family: Arial;
+    
+        font-size: 14px; 
+        line-height: 1.1875;
+        text-align: center;
+    }
+
+    .catalog_btn { /*padding*/
+        background-color: #CCF3BE;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        padding: 15px;
+        height: 70px;
+    }
+
+    .catalog_btn_face {
+        background-color: #CCF3BE;
+    }
+
+    .product { /*padding*/
+        background-color: #CCF3BE;
+        padding: 0px;
+    }
+
+    .product_table { /*grid-template-columns, grid-auto-flow, padding*/
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-auto-flow: row;
+        
+        gap: 20px;
+        padding: 10px 15px 10px 10px;
+    }
+
+    .product_list {
+        position: relative;
+        width: 370px;
+    }
+
+    .product_img {
+        width: 370px;
+        height: 645px;
+
+        box-shadow: 10px 10px grey;
+        border-radius: 5%;
+    }
+
+    .product_list .product_button_face {
+        position: absolute;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .feedback {
+        background-color: #FFFFFF;
+        padding: 20px;
+
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .feedback_title { /*font-size*/
+        color: #000000;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 20px; 
+        line-height: 1.1875;
+        text-align: center;
+    }
+
+    .feedback_btn {
+        background-color: #FFFFFF;
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+
+        padding: 10px;
+        height: 70px;
+    }
+
+    .feedback_btn_face {
+        background-color: #FFFFFF;
+    }
+
+    .feedback_text { /*padding*/
+        background-color: #FFFFFF;
+        padding: 0px;
+    }
+
+    .feedback_table { /*grid-template-columns, grid-template-rows, padding-bottom*/
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .feedback_list { 
+        background-color: rgba(188, 53, 190, 0.25);
+        position: relative;
+        border-radius: 5%;
+        width: 400px;
+        height: 350px;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .feedback_img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .feedback_list p { /*padding-bottom, font-size*/
+        padding-bottom: 10px;
+        font-size: 14px; 
+    }
+
+    .feedback_list_table {
+        margin: 0;
+    }
+
+    .feedback_list_table th { /*+*/
+        font-size: 16px; 
+    }
+
+    .feedback_list_table font { /*+*/
+        font-size: 12px; 
+    }
+
+    .contacts { /*padding*/
+        background-color: #CCF3BE;
+        padding: 10px;
+
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .contacts_link {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contacts_link p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts_link h1 { /*font-size*/
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .information {
+        height: auto;
+        background-color: #FFFFFF;
+        display: flex;
+        
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    .author {
+        padding: 10px;
+    }
+
+    .author p { /*font-size*/
+        color: #000000;
+        font-family: Arial;
+        font-weight: normal;
+        font-size: 10px; 
+        line-height: 1.1875;
+        text-align: left;
+    }
+
+    #myBtn { /*bottom, font-size*/
+        display: none; 
+        position: fixed; 
+        bottom: 80px; 
+        right: 30px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-color: #687e61; 
+        color: rgb(0, 0, 0); 
+        cursor: pointer; 
+        padding: 15px; 
+        border-radius: 10px; 
+        font-size: 18px; 
+    }
+
+    #myBtn:hover {
+        background-color: #BC35BE; 
+    }
+}
