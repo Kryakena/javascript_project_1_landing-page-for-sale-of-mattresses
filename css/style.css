@@ -657,6 +657,14 @@ a {
     font-weight: 600;
 }
 
+.contacts a {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
 .contacts_link p {
     display: flex;
     justify-content: center;
