@@ -186,7 +186,7 @@
 
     .feedback_list { 
         width: 365px;
-        height: 280px;
+        height: auto;
     }
 
     .feedback_list p { 

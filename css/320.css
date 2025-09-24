@@ -234,13 +234,13 @@
 
     .feedback_list { 
         width: 310px;
-        height: 250px;
+        height: auto;
         padding: 10px;
     }
 
     .feedback_list p { 
         padding-bottom: 10px;
-        font-size: 14px; 
+        font-size: 12px; 
     }
 
     .feedback_list_table th { 

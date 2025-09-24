@@ -155,7 +155,7 @@
 
     .feedback_list { 
         width: 240px;
-        height: 340px;
+        height: auto;
         padding: 15px;
     }
 
